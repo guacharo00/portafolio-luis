@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  background-color: #1f1d2c;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.head__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.head__navigation--brand {
+  background-color: #576361;
+  border-radius: 100%;
+  padding: 1rem 2rem;
+}
+.head__navigation--logo {
+  font-size: 3rem;
+}
+.head__navigation--item {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+.head__navigation--item a {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #ffffff;
+  transition: all 0.5s;
+  transform: scale(1, 1);
+}
+.head__navigation--item a:hover {
+  transform: scale(1.2, 1.2);
+}
+.head__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 5rem;
+}
+.head__box--name {
+  font-size: 5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.head__box--name span {
+  color: #ddac58;
+}
+.head__box--desc {
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  color: #86858d;
+  margin-bottom: 4rem;
+}
+.head__box--icons {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.head__box--icon {
+  display: block;
+  font-size: 6rem;
+  color: #fff;
+  align-self: baseline;
+}
+.head__box--icon-1 {
+  grid-column: 2/3;
+}
+.head__box--icon-2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.head__box--icon-3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.container {
+  max-width: 180rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ddac58;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #ddac58;
+  color: #1f1d2c;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+@use "base" as *;
+
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid $clr-button;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $clr-button;
+    color: $clr-bg;
+  }
+}

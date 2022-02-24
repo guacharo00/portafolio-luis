@@ -1,0 +1,51 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+/////////////////////////////////////
+// Variables
+/////////////////////////////////////
+
+// Colores
+$clr-bg: #1f1d2c;
+$clr-dark-light: #262837;
+$clr-text-dark: #86858d;
+$clr-text-light: #ffffff;
+$clr-text-bg: #576361;
+$clr-button: #ddac58;
+
+// Fuentes
+$font-stack: "Work Sans", sans-serif;
+$second-font: "Roboto Serif", sans-serif;
+
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  background-color: $clr-bg;
+  color: $clr-text-light;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
