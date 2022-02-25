@@ -17,6 +17,7 @@ $clr-button: #ddac58;
 $font-stack: "Work Sans", sans-serif;
 $second-font: "Roboto Serif", sans-serif;
 
+// Reset
 *,
 *::after,
 ::before {
@@ -48,4 +49,11 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+// Mixim
+@mixin heading-1 {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
