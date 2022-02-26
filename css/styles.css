@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
 *,
@@ -17,7 +18,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5rem;
   background-color: #1f1d2c;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 a {
@@ -31,6 +32,65 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  margin-bottom: 15rem;
+}
+.about__boxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.about__boxes--box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.about__boxes--box:hover {
+  background-color: transparent;
+}
+.about__boxes--box-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.about__boxes .front-end {
+  grid-column: 1/5;
+}
+.about__boxes .soft-skills {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+.about__boxes .back-end {
+  grid-column: 3/6;
+}
+.about__boxes .diseño {
+  grid-column: 3/6;
+}
+.about__text-box {
+  background-color: rgba(38, 40, 55, 0.2);
+  padding: 2rem;
+}
+.about__me {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.about__me span {
+  color: #ddac58;
+}
+.about__description {
+  font-size: 1.8rem;
+  max-width: 45ch;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .head {
@@ -57,7 +117,7 @@ ul {
 .head__navigation--item a {
   display: inline-block;
   font-size: 1.7rem;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   transition: all 0.5s;
   transform: scale(1, 1);
 }
@@ -99,9 +159,13 @@ ul {
 }
 .head__box--icon {
   display: block;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #fff;
   transition: all 0.5s;
+  transform: scale(1, 1);
+}
+.head__box--icon:hover {
+  transform: scale(1.2, 1.2);
 }
 .head__box--icon-1 {
   grid-column: 3/4;
@@ -124,12 +188,19 @@ ul {
 .head__box--icon-3:hover {
   color: #1d9bf0;
 }
-.head__box .social {
-  font-size: 1.8rem;
+.head__box--icon-4 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.head__box--icon-4:hover {
+  color: #0d8cf0;
+}
+.head__box .heading-3 {
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
   grid-column: 2/5;
-  align-self: center;
+  align-self: end;
 }
 
 .container {
@@ -151,6 +222,71 @@ ul {
 .btn:hover {
   background-color: #ddac58;
   color: #1f1d2c;
+}
+
+.about__boxes--box {
+  padding: 2rem;
+  text-align: center;
+}
+.about__boxes--box ul li {
+  margin-bottom: 1rem;
+}
+
+.icon-group p {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.icon-group ion-icon {
+  font-size: 4rem;
+}
+
+.heading-4 {
+  font-size: 2.2rem;
+  color: #86858d;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ion-icon[name=logo-html5] {
+  color: #e96228;
+}
+
+ion-icon[name=logo-css3] {
+  color: #146eb0;
+}
+
+ion-icon[name=logo-javascript] {
+  color: #efd81d;
+}
+
+ion-icon[name=logo-react] {
+  color: #5ed3f3;
+}
+
+ion-icon[name=phone-portrait-outline] {
+  color: orangered;
+}
+
+ion-icon[name=logo-nodejs] {
+  color: #8abc41;
+}
+
+ion-icon[name=close-outline] {
+  color: #2f2f2f;
+}
+
+ion-icon[name=leaf-outline] {
+  color: #249043;
+}
+
+ion-icon[name=logo-figma] {
+  color: #9a54f2;
+}
+
+ion-icon[name=image-outline] {
+  color: #2f9ff2;
 }
 
 /*# sourceMappingURL=styles.css.map */

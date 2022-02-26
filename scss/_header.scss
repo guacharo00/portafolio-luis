@@ -70,9 +70,12 @@
     }
     &--icon {
       display: block;
-      font-size: 6rem;
+      font-size: 5rem;
       color: #fff;
       transition: all .5s;
+      transform: scale(1.0, 1.0);
+
+      &:hover { transform: scale(1.2, 1.2); }
 
       &-1 {
         grid-column: 3 / 4;
@@ -96,13 +99,20 @@
           color: #1d9bf0;
         }
       }
+      &-4 {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        &:hover{
+          color: #0d8cf0;
+        }
+      }
     }
-    .social {
-      font-size: 1.8rem;
+    .heading-3 {
+      font-size: 2rem;
       text-align: center;
       margin-bottom: 2rem;
       grid-column: 2 / 5;
-      align-self: center;
+      align-self: end;
     }
   }
 }
