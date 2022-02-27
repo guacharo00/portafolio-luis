@@ -13,6 +13,16 @@ html {
   font-size: 62.5%;
   box-sizing: inherit;
 }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   font-family: "Work Sans", sans-serif;
@@ -36,7 +46,7 @@ ul {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
   gap: 2rem;
   margin-bottom: 15rem;
 }
@@ -92,6 +102,30 @@ ul {
   margin-bottom: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
 }
+.about__hobbies-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.about__hobbies-title span {
+  color: #ddac58;
+}
+.about__hobbies {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.about__hobbies ion-icon[name=game-controller-outline] {
+  color: #10780f;
+}
+.about__hobbies ion-icon[name=basketball-outline] {
+  color: #f08e1e;
+}
+.about__hobbies ion-icon[name=book-outline] {
+  color: #3362a0;
+}
 
 .head {
   margin-bottom: 20rem;
@@ -126,7 +160,7 @@ ul {
 }
 .head__box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 5rem;
 }
 .head__box--name {

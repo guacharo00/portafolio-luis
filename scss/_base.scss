@@ -9,7 +9,7 @@
 $clr-bg: #1f1d2c;
 $clr-dark-light: #262837;
 $clr-text-dark: #86858d;
-$clr-text-light: rgba(255, 255, 255, .8);
+$clr-text-light: rgba(255, 255, 255, 0.8);
 $clr-text-bg: #576361;
 $clr-button: #ddac58;
 
@@ -29,6 +29,13 @@ $second-font: "Roboto Serif", sans-serif;
 html {
   font-size: 62.5%;
   box-sizing: inherit;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 40%;
+  }
 }
 
 body {

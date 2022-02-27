@@ -1,68 +1,95 @@
-@use 'base' as *;
+@use "base" as *;
 
 .about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  gap: 2rem;
+  margin-bottom: 15rem;
+
+  &__boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 2rem;
-    margin-bottom: 15rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
 
-    &__boxes {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 1rem;
-        margin-top: 2rem;
+    &--box {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      transition: all 0.5s;
 
-        &--box {
-            border: 1px solid rgba(255, 255, 255, .2);
-            background-color: rgba(255, 255, 255, .1);
-            border-radius: 5px;
-            transition: all .5s;
+      &:hover {
+        background-color: transparent;
+      }
 
-            &:hover {
-                background-color: transparent;
-            }
-
-            &-icons {
-                display: flex;
-                justify-content: space-around;
-                text-align: center;
-            }
-        }
-
-        & .front-end {
-            grid-column: 1 / 5;
-        }
-        & .soft-skills {
-            grid-column: 1 / 3;
-            grid-row: 2 / 4;
-        }
-        & .back-end {
-            grid-column: 3 / 6;
-        }
-        & .diseño {
-            grid-column: 3 / 6;
-        }
-
+      &-icons {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
     }
 
-    &__text-box {
-        background-color: rgba($clr-dark-light, .2);
-        padding: 2rem;
+    & .front-end {
+      grid-column: 1 / 5;
     }
-
-    &__me {
-        @include heading-1;
-        margin-bottom: 1.5rem;
-
-        span {
-            color: $clr-button;
-        }
+    & .soft-skills {
+      grid-column: 1 / 3;
+      grid-row: 2 / 4;
     }
-
-    &__description {
-        font-size: 1.8rem;
-        max-width: 45ch;
-        margin-bottom: 2.5rem;
-        color: $clr-text-light;
+    & .back-end {
+      grid-column: 3 / 6;
     }
+    & .diseño {
+      grid-column: 3 / 6;
+    }
+  }
+
+  &__text-box {
+    background-color: rgba($clr-dark-light, 0.2);
+    padding: 2rem;
+  }
+
+  &__me {
+    @include heading-1;
+    margin-bottom: 1.5rem;
+
+    span {
+      color: $clr-button;
+    }
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    max-width: 45ch;
+    margin-bottom: 2.5rem;
+    color: $clr-text-light;
+  }
+
+  &__hobbies-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    span {
+      color: $clr-button;
+    }
+  }
+
+  &__hobbies {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    ion-icon[name="game-controller-outline"] {
+      color: #10780f;
+    }
+    ion-icon[name="basketball-outline"] {
+      color: #f08e1e;
+    }
+    ion-icon[name="book-outline"] {
+      color: #3362a0;
+    }
+  }
 }

@@ -38,7 +38,7 @@
 
   &__box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     gap: 5rem;
 
     &--name {
@@ -58,7 +58,7 @@
       margin-bottom: 4rem;
     }
     &--img {
-      background-color: rgba($clr-dark-light, .2);
+      background-color: rgba($clr-dark-light, 0.2);
       img {
         object-fit: cover;
       }
@@ -72,37 +72,39 @@
       display: block;
       font-size: 5rem;
       color: #fff;
-      transition: all .5s;
-      transform: scale(1.0, 1.0);
+      transition: all 0.5s;
+      transform: scale(1, 1);
 
-      &:hover { transform: scale(1.2, 1.2); }
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
 
       &-1 {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
 
-        &:hover{
+        &:hover {
           color: #2ea043;
         }
       }
       &-2 {
         grid-column: 4 / 5;
         grid-row: 3 / 4;
-        &:hover{
+        &:hover {
           color: #2867b2;
         }
       }
       &-3 {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
-        &:hover{
+        &:hover {
           color: #1d9bf0;
         }
       }
       &-4 {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
-        &:hover{
+        &:hover {
           color: #0d8cf0;
         }
       }
