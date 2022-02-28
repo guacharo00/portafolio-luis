@@ -1,9 +1,10 @@
 @use "base" as *;
 
 .about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
-  gap: 2rem;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  // gap: 2rem;
+  display: flex;
   margin-bottom: 15rem;
 
   &__boxes {

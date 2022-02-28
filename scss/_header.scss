@@ -9,6 +9,11 @@
     align-items: center;
     margin-bottom: 8rem;
 
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
     &--brand {
       background-color: $clr-text-bg;
       border-radius: 100%;
@@ -37,10 +42,14 @@
   }
 
   &__box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    gap: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
     &--name {
       @include heading-1;
       margin-top: 2rem;
@@ -50,6 +59,18 @@
         color: $clr-button;
       }
     }
+
+    &--text-container {
+      flex: 1 0 33.3%;
+
+      @media screen and (max-width: 900px) {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+    }
+
     &--desc {
       font-family: $second-font;
       font-size: 1.8rem;
@@ -58,15 +79,25 @@
       margin-bottom: 4rem;
     }
     &--img {
+      flex: 1 0 33.3%;
       background-color: rgba($clr-dark-light, 0.2);
-      img {
-        object-fit: cover;
+
+      @media screen and (max-width: 900px) {
+        width: 60%;
+        margin: 0 auto;
       }
     }
     &--icons {
+      flex: 1 0 33.3%;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
+      text-align: center;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+        justify-content: space-around;
+      }
     }
     &--icon {
       display: block;
