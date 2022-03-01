@@ -15,6 +15,7 @@
   }
 
   &__container {
+    flex: 1 0 50%;
     @media screen and (max-width: 800px) {
       width: 80%;
       text-align: center;
@@ -88,6 +89,7 @@
   }
 
   &__text-box {
+    flex: 1 0 50%;
     background-color: rgba($clr-dark-light, 0.2);
     padding: 2rem;
 
@@ -113,7 +115,7 @@
     color: $clr-text-light;
 
     @media screen and (max-width: 800px) {
-      max-width: 100%;
+      width: 100%;
     }
   }
 

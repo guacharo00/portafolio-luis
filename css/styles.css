@@ -56,6 +56,9 @@ ul {
     gap: 2rem;
   }
 }
+.about__container {
+  flex: 1 0 50%;
+}
 @media screen and (max-width: 800px) {
   .about__container {
     width: 80%;
@@ -128,6 +131,7 @@ ul {
   }
 }
 .about__text-box {
+  flex: 1 0 50%;
   background-color: rgba(38, 40, 55, 0.2);
   padding: 2rem;
 }
@@ -154,7 +158,7 @@ ul {
 }
 @media screen and (max-width: 800px) {
   .about__description {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .about__hobbies-title {
@@ -210,6 +214,13 @@ ul {
 }
 .head__navigation--logo {
   font-size: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .head__navigation--menu {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .head__navigation--item {
   display: inline-block;

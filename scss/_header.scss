@@ -22,7 +22,13 @@
     &--logo {
       font-size: 3rem;
     }
-
+    &--menu {
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
     &--item {
       display: inline-block;
       margin-right: 2.5rem;
