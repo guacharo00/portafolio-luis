@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 2rem;
 
     @media screen and (max-width: 900px) {
       flex-direction: column;
@@ -61,7 +62,7 @@
     }
 
     &--text-container {
-      flex: 1 0 33.3%;
+      flex: 1 0 35%;
 
       @media screen and (max-width: 900px) {
         width: 60%;
@@ -79,7 +80,7 @@
       margin-bottom: 4rem;
     }
     &--img {
-      flex: 1 0 33.3%;
+      flex: 1 0 24%;
       background-color: rgba($clr-dark-light, 0.2);
 
       @media screen and (max-width: 900px) {
@@ -88,7 +89,7 @@
       }
     }
     &--icons {
-      flex: 1 0 33.3%;
+      flex: 1 0 35%;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
