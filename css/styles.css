@@ -47,7 +47,7 @@ ul {
 .about {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 @media screen and (max-width: 800px) {
   .about {
@@ -192,14 +192,147 @@ ul {
   color: #3362a0;
 }
 
-.head {
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ddac58;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #ddac58;
+  color: #1f1d2c;
+}
+
+.about__boxes--box {
+  padding: 2rem;
+  text-align: center;
+}
+.about__boxes--box ul li {
+  margin-bottom: 1rem;
+}
+
+.icon-group p {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.icon-group ion-icon {
+  font-size: 4rem;
+}
+
+.heading-4 {
+  font-size: 2.2rem;
+  color: #86858d;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ion-icon[name=logo-html5] {
+  color: #e96228;
+}
+
+ion-icon[name=logo-css3] {
+  color: #146eb0;
+}
+
+ion-icon[name=logo-javascript] {
+  color: #efd81d;
+}
+
+ion-icon[name=logo-react] {
+  color: #5ed3f3;
+}
+
+ion-icon[name=phone-portrait-outline] {
+  color: orangered;
+}
+
+ion-icon[name=logo-nodejs] {
+  color: #8abc41;
+}
+
+ion-icon[name=close-outline] {
+  color: #cfcccc;
+}
+
+ion-icon[name=leaf-outline] {
+  color: #249043;
+}
+
+ion-icon[name=logo-figma] {
+  color: #9a54f2;
+}
+
+ion-icon[name=image-outline] {
+  color: #2f9ff2;
+}
+
+ion-icon[name=radio-button-off-outline] {
+  color: #ec0101;
+}
+
+.formacion {
+  background-color: rgba(38, 40, 55, 0.2);
+  padding: 9rem;
+  text-align: center;
   margin-bottom: 20rem;
+}
+.formacion__title {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.formacion__title span {
+  color: #ddac58;
+}
+.formacion__boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+.formacion__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  transform: scale(1, 1);
+}
+.formacion__box:hover {
+  background-color: #1f1d2c;
+  border-bottom: transparent;
+  transform: scale(1.2, 1.2);
+}
+.formacion__box ion-icon {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+.formacion__box .heading-3 {
+  margin-bottom: 1rem;
+}
+.formacion__desc {
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.head {
+  margin-bottom: 25rem;
 }
 .head__navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 15rem;
 }
 @media screen and (max-width: 900px) {
   .head__navigation {
@@ -345,6 +478,102 @@ ul {
   align-self: end;
 }
 
+.proyectos {
+  padding: 3rem;
+}
+.proyectos__title {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+.proyectos__title span {
+  color: #ddac58;
+}
+.proyectos__container {
+  display: grid;
+  grid-template-columns: repeat(12, 7vw);
+  grid-template-rows: repeat(8, 10rem);
+  place-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .proyectos__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.proyectos__box {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: rgba(38, 40, 55, 0.4);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.proyectos__box:hover {
+  background-color: rgba(38, 40, 55, 0.1);
+}
+@media screen and (max-width: 800px) {
+  .proyectos__box {
+    text-align: center;
+    border-radius: 1rem;
+  }
+}
+.proyectos__heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.proyectos__stack {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.proyectos__links {
+  margin-bottom: 2rem;
+}
+.proyectos__links a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.proyectos__links a:hover {
+  color: #fff;
+}
+.proyectos__img {
+  justify-self: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  transform: rotate(-25deg);
+}
+@media screen and (max-width: 800px) {
+  .proyectos__img {
+    transform: rotate(0deg);
+  }
+}
+.proyectos__img img {
+  object-fit: cover;
+}
+.proyectos__proyecto-1 {
+  grid-column: 1/7;
+  grid-row: 1/4;
+}
+.proyectos__proyecto-2 {
+  grid-column: 8/13;
+  grid-row: 1/5;
+}
+.proyectos__proyecto-3 {
+  grid-column: 1/6;
+  grid-row: 5/9;
+}
+.proyectos__proyecto-4 {
+  grid-column: 7/13;
+  grid-row: 6/9;
+}
+
 .container {
   max-width: 180rem;
   margin: 0 auto;
@@ -354,86 +583,6 @@ ul {
   .container {
     width: 100vw;
   }
-}
-
-.btn {
-  padding: 1rem 4rem;
-  font-size: 1.5rem;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #ddac58;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.btn:hover {
-  background-color: #ddac58;
-  color: #1f1d2c;
-}
-
-.about__boxes--box {
-  padding: 2rem;
-  text-align: center;
-}
-.about__boxes--box ul li {
-  margin-bottom: 1rem;
-}
-
-.icon-group p {
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-.icon-group ion-icon {
-  font-size: 4rem;
-}
-
-.heading-4 {
-  font-size: 2.2rem;
-  color: #86858d;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-ion-icon[name=logo-html5] {
-  color: #e96228;
-}
-
-ion-icon[name=logo-css3] {
-  color: #146eb0;
-}
-
-ion-icon[name=logo-javascript] {
-  color: #efd81d;
-}
-
-ion-icon[name=logo-react] {
-  color: #5ed3f3;
-}
-
-ion-icon[name=phone-portrait-outline] {
-  color: orangered;
-}
-
-ion-icon[name=logo-nodejs] {
-  color: #8abc41;
-}
-
-ion-icon[name=close-outline] {
-  color: #2f2f2f;
-}
-
-ion-icon[name=leaf-outline] {
-  color: #249043;
-}
-
-ion-icon[name=logo-figma] {
-  color: #9a54f2;
-}
-
-ion-icon[name=image-outline] {
-  color: #2f9ff2;
 }
 
 /*# sourceMappingURL=styles.css.map */

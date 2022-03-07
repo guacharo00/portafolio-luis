@@ -28,7 +28,6 @@
 }
 
 .icon-group {
-
   p {
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
@@ -43,38 +42,41 @@
   font-size: 2.2rem;
   color: $clr-text-dark;
   margin-bottom: 1rem;
-  padding-bottom: .5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 // Icon Colors
-ion-icon[name="logo-html5"]{
+ion-icon[name="logo-html5"] {
   color: #e96228;
 }
-ion-icon[name="logo-css3"]{
+ion-icon[name="logo-css3"] {
   color: #146eb0;
 }
-ion-icon[name="logo-javascript"]{
+ion-icon[name="logo-javascript"] {
   color: #efd81d;
 }
-ion-icon[name="logo-react"]{
+ion-icon[name="logo-react"] {
   color: #5ed3f3;
 }
-ion-icon[name="phone-portrait-outline"]{
+ion-icon[name="phone-portrait-outline"] {
   color: orangered;
 }
-ion-icon[name="logo-nodejs"]{
+ion-icon[name="logo-nodejs"] {
   color: #8abc41;
 }
-ion-icon[name="close-outline"]{
-  color: #2f2f2f;
+ion-icon[name="close-outline"] {
+  color: #cfcccc;
 }
-ion-icon[name="leaf-outline"]{
+ion-icon[name="leaf-outline"] {
   color: #249043;
 }
-ion-icon[name="logo-figma"]{
+ion-icon[name="logo-figma"] {
   color: #9a54f2;
 }
-ion-icon[name="image-outline"]{
+ion-icon[name="image-outline"] {
   color: #2f9ff2;
+}
+ion-icon[name="radio-button-off-outline"] {
+  color: #ec0101;
 }
