@@ -149,6 +149,7 @@ ul {
 }
 .about__me span {
   color: #ddac58;
+  border-bottom: 1px solid #ddac58;
 }
 .about__description {
   font-size: 1.8rem;
@@ -276,11 +277,83 @@ ion-icon[name=radio-button-off-outline] {
   color: #ec0101;
 }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25rem;
+}
+@media screen and (max-width: 750px) {
+  .contacto {
+    text-align: center;
+  }
+}
+.contacto__title {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 4.5rem;
+}
+.contacto__title span {
+  color: #ddac58;
+  border-bottom: 1px solid #ddac58;
+}
+.contacto__container {
+  width: 70%;
+  background-color: rgba(38, 40, 55, 0.2);
+  padding: 4rem;
+}
+@media screen and (max-width: 750px) {
+  .contacto__container {
+    width: 95%;
+  }
+}
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto__form input[type=text],
+.contacto__form input[type=email],
+.contacto__form textarea {
+  width: 50%;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: #86858d;
+  background-color: #1f1d2c;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 750px) {
+  .contacto__form input[type=text],
+.contacto__form input[type=email],
+.contacto__form textarea {
+    width: 100%;
+  }
+}
+.contacto__form input[type=text]:focus,
+.contacto__form input[type=email]:focus,
+.contacto__form textarea:focus {
+  border: 1px solid #ddac58;
+}
+.contacto__form textarea {
+  resize: none;
+}
+
 .formacion {
   background-color: rgba(38, 40, 55, 0.2);
   padding: 9rem;
   text-align: center;
   margin-bottom: 20rem;
+}
+@media screen and (max-width: 450px) {
+  .formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .formacion__title {
   font-size: 3.5rem;
@@ -290,6 +363,7 @@ ion-icon[name=radio-button-off-outline] {
 }
 .formacion__title span {
   color: #ddac58;
+  border-bottom: 1px solid #ddac58;
 }
 .formacion__boxes {
   display: grid;
@@ -323,6 +397,22 @@ ion-icon[name=radio-button-off-outline] {
   color: rgba(255, 255, 255, 0.3);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.footer {
+  background-color: rgba(38, 40, 55, 0.2);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__contenido {
+  font-size: 2rem;
+  text-align: center;
+}
+.footer__contenido span {
+  color: #ddac58;
+  border-bottom: 1px solid #ddac58;
 }
 
 .head {
@@ -480,6 +570,7 @@ ion-icon[name=radio-button-off-outline] {
 
 .proyectos {
   padding: 3rem;
+  margin-bottom: 20rem;
 }
 .proyectos__title {
   font-size: 3.5rem;
@@ -490,6 +581,7 @@ ion-icon[name=radio-button-off-outline] {
 }
 .proyectos__title span {
   color: #ddac58;
+  border-bottom: 1px solid #ddac58;
 }
 .proyectos__container {
   display: grid;
@@ -512,9 +604,10 @@ ion-icon[name=radio-button-off-outline] {
   background-color: rgba(38, 40, 55, 0.4);
   overflow: hidden;
   transition: all 0.5s;
+  transform: scale(1, 1);
 }
 .proyectos__box:hover {
-  background-color: rgba(38, 40, 55, 0.1);
+  transform: scale(1.1, 1.1);
 }
 @media screen and (max-width: 800px) {
   .proyectos__box {
@@ -555,7 +648,7 @@ ion-icon[name=radio-button-off-outline] {
   }
 }
 .proyectos__img img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .proyectos__proyecto-1 {
   grid-column: 1/7;

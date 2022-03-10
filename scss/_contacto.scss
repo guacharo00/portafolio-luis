@@ -1,0 +1,65 @@
+@use "base" as *;
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25rem;
+
+  @media screen and (max-width: 750px) {
+    text-align: center;
+  }
+
+  &__title {
+    @include heading-1;
+    margin-bottom: 4.5rem;
+
+    span {
+      color: $clr-button;
+      border-bottom: 1px solid $clr-button;
+    }
+  }
+
+  &__container {
+    width: 70%;
+    background-color: rgba($clr-dark-light, 0.2);
+    padding: 4rem;
+
+    @media screen and (max-width: 750px) {
+      width: 95%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 50%;
+      margin-bottom: 5rem;
+      padding: 2rem;
+      outline: none;
+      border-radius: 1rem;
+      font-size: 1.8rem;
+      color: $clr-text-dark;
+      background-color: $clr-bg;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+
+      @media screen and (max-width: 750px) {
+        width: 100%;
+      }
+
+      &:focus {
+        border: 1px solid $clr-button;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+}

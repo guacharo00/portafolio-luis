@@ -1,0 +1,19 @@
+@use "base" as *;
+
+.footer {
+  background-color: rgba($clr-dark-light, 0.2);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__contenido {
+    font-size: 2rem;
+    text-align: center;
+
+    span {
+      color: $clr-button;
+      border-bottom: 1px solid $clr-button;
+    }
+  }
+}
