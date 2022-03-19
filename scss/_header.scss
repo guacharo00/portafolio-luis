@@ -3,6 +3,10 @@
 .head {
   margin-bottom: 25rem;
 
+  @media screen and (max-width: 600px) {
+    margin-bottom: 12rem;
+  }
+
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -12,6 +16,7 @@
     @media screen and (max-width: 900px) {
       flex-direction: column;
       gap: 2.5rem;
+      margin-bottom: 6rem;
     }
 
     &--brand {

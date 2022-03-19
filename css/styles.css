@@ -53,7 +53,8 @@ ul {
   .about {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
   }
 }
 .about__container {
@@ -281,11 +282,12 @@ ion-icon[name=radio-button-off-outline] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 25rem;
+  margin-bottom: 12rem;
 }
 @media screen and (max-width: 750px) {
   .contacto {
     text-align: center;
+    margin-bottom: 15rem;
   }
 }
 .contacto__title {
@@ -341,6 +343,18 @@ ion-icon[name=radio-button-off-outline] {
 .contacto__form textarea {
   resize: none;
 }
+.contacto__form .err {
+  width: 70%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid orangered;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  color: orangered;
+  opacity: 0;
+  transition: all 0.5s;
+}
 
 .formacion {
   background-color: rgba(38, 40, 55, 0.2);
@@ -353,6 +367,7 @@ ion-icon[name=radio-button-off-outline] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
   }
 }
 .formacion__title {
@@ -407,7 +422,7 @@ ion-icon[name=radio-button-off-outline] {
   justify-content: center;
 }
 .footer__contenido {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .footer__contenido span {
@@ -417,6 +432,11 @@ ion-icon[name=radio-button-off-outline] {
 
 .head {
   margin-bottom: 25rem;
+}
+@media screen and (max-width: 600px) {
+  .head {
+    margin-bottom: 12rem;
+  }
 }
 .head__navigation {
   display: flex;
@@ -428,6 +448,7 @@ ion-icon[name=radio-button-off-outline] {
   .head__navigation {
     flex-direction: column;
     gap: 2.5rem;
+    margin-bottom: 6rem;
   }
 }
 .head__navigation--brand {
@@ -571,6 +592,11 @@ ion-icon[name=radio-button-off-outline] {
 .proyectos {
   padding: 3rem;
   margin-bottom: 20rem;
+}
+@media screen and (max-width: 800px) {
+  .proyectos {
+    margin-bottom: 10rem;
+  }
 }
 .proyectos__title {
   font-size: 3.5rem;

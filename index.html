@@ -22,12 +22,18 @@
           </div>
           <nav class="head__navigation--menu">
             <ul class="head__navigation--list">
-              <li class="head__navigation--item"><a href="#">Sobre mi</a></li>
-              <li class="head__navigation--item"><a href="#">Skills</a></li>
               <li class="head__navigation--item">
-                <a href="#">Experiencia</a>
+                <a href="#about">Sobre mi</a>
               </li>
-              <li class="head__navigation--item"><a href="#">Contacto</a></li>
+              <li class="head__navigation--item">
+                <a href="#formacion">Formacion</a>
+              </li>
+              <li class="head__navigation--item">
+                <a href="#proyectos">Proyectos</a>
+              </li>
+              <li class="head__navigation--item">
+                <a href="#contacto">Contacto</a>
+              </li>
             </ul>
           </nav>
         </section>
@@ -82,7 +88,7 @@
       <!-- =========================== -->
       <!-- Inicio Seccion Acerca de -->
       <!-- =========================== -->
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__container">
           <h3 class="heading-3">Mis skills</h3>
           <div class="about__boxes">
@@ -190,7 +196,7 @@
       <!-- =========================== -->
       <!-- Inicio Seccion Formacion -->
       <!-- =========================== -->
-      <section class="formacion">
+      <section id="formacion" class="formacion">
         <h2 class="formacion__title">Formacion y <span>Cursos</span></h2>
         <div class="formacion__boxes">
           <div class="formacion__box">
@@ -232,7 +238,7 @@
       <!-- =========================== -->
       <!-- Inicio Seccion Proyectos -->
       <!-- =========================== -->
-      <section class="proyectos">
+      <section id="proyectos" class="proyectos">
         <h2 class="proyectos__title">Ultimos <span>Proyectos</span></h2>
         <div class="proyectos__container">
           <div class="proyectos__box proyectos__proyecto-1">
@@ -304,17 +310,20 @@
       <!-- =========================== -->
       <!-- Inicio Seccion contacto -->
       <!-- =========================== -->
-      <section class="contacto">
+      <section id="contacto" class="contacto">
         <h2 class="contacto__title">Que tal si <span>Charlamos!</span></h2>
         <div class="contacto__container">
           <form action="" class="contacto__form">
-            <input type="text" placeholder="Escribe tu nombre" />
-            <input type="email" placeholder="Escribe tu correo" />
+            <input id="name" type="text" placeholder="Escribe tu nombre" />
+            <input id="email" type="email" placeholder="Escribe tu correo" />
             <textarea
               name="text"
-              id=""
+              id="message"
               placeholder="De que quieres que hablemos"
             ></textarea>
+            <div class="err">
+              <p>Err</p>
+            </div>
             <input class="btn" type="submit" value="Pues vamos" />
           </form>
         </div>

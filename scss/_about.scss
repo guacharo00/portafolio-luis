@@ -11,7 +11,8 @@
   @media screen and (max-width: 800px) {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
+    margin-bottom: 10rem;
   }
 
   &__container {
